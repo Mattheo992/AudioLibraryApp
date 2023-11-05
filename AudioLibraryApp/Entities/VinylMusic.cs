@@ -1,13 +1,8 @@
 ﻿namespace AudioLibraryApp.Entities
 {
-    public class VinylMusic : EntityBase
+    public class VinylMusic : CDMusic
     {
-        public string? AlbumTitle { get; set; }
+        public override string ToString() => base.ToString() + " (Vinyl)";
 
-        public string? AlbumArtist { get; set; }
-
-        public string? PublicationDate { get; set; }
-
-        public override string ToString() => $"Id: {Id}, AlbumTitle: {AlbumTitle}, AlbumArtist: {AlbumArtist}, PublicationDate: {PublicationDate}";
     }
 }

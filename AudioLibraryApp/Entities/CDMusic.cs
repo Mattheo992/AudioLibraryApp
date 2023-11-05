@@ -6,8 +6,7 @@
 
         public string? AlbumArtist { get; set; }
 
-        public int? PublicationDate { get; set; }
 
-        public override string ToString() => $"Id: {Id}, AlbumTitle: {AlbumTitle}, AlbumArtist: {AlbumArtist}, PublicationDate: {PublicationDate}";
+        public override string ToString() => $"Id: {Id}, Album Title: {AlbumTitle}, Album Artist: {AlbumArtist}";
     }
 }
